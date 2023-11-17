@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Solicitud.css">
+    <title>Solicitud de Colegiatura</title>
+</head>
+<body>
+    <header>
+        <h1>Solicitud de Colegiatura</h1>
+    </header>
+    <section id="form-section">
+        <h2>Formulario de Solicitud</h2>
+        <form id="solicitud-form">
+            <label for="dni">DNI:</label>
+            <input type="number" id="dni" name="dni" pattern="[0-9]" title="Ingrese solo 9 números" required>
+
+            <label for="datos-personales">Datos Personales:</label>
+            <textarea id="datos-personales" name="datos-personales" required></textarea>
+
+            <label for="adjuntar-titulo">Adjuntar Título Profesional:</label>
+            <input type="file" id="adjuntar-titulo" name="adjuntar-titulo" accept=".pdf,.doc,.docx" required>
+
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+    </section>
+    <section id="status-section">
+        <h2>Estado de la Solicitud</h2>
+        <p id="estado-solicitud">Esperando envío de solicitud...</p>
+        <p id="estado-solicitud">Advertencia: Esto podría tomar tiempo</p>
+        <button id="consultar-btn"> <a href="Consultar.html">Consultar Estado</a></button>
+        <button id="corregir-btn" style="display:none;">Corregir Datos</button>
+        <button id="pagar-btn" style="display:none;">Realizar Pago</a></button>
+    </section>
+    <footer>
+        <p>&copy; 2023 Colegio de Ingenieros del Perú</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

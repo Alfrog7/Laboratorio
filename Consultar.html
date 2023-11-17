@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Consultar.css">
+    <title>Verificación de Pago y Carnet Digital</title>
+</head>
+<body>
+    <header>
+        <h1>Verificación de Pago y Carnet Digital</h1>
+    </header>
+    <section id="verificacion-section">
+        <h2>Verificación de Pago</h2>
+        <form id="verificacion-form">
+            <label for="codigo-pago">Ingrese el código de pago:</label>
+            <input type="text" id="codigo-pago" name="codigo-pago" required>
+
+            <button type="submit">Verificar Pago</button>
+        </form>
+        <div id="estado-verificacion">
+            <!-- Aquí se mostrará el estado de la verificación de pago -->
+        </div>
+    </section>
+    <section id="generacion-carnet-section" style="display: none;">
+        <h2>Generación de Carnet Digital</h2>
+        <form id="generacion-carnet-form">
+            <!-- Campos para la generación del carnet -->
+            <button type="submit">Generar Carnet Digital</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 Colegio de Ingenieros del Perú</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
